@@ -20,24 +20,40 @@ header{
 }
 /* common-style */
 .common-btn{
-    background-color:#fd6e0a;
-    padding: 10px 20px;
-    border-radius: 12px;
+    background-color: #fd6e0aFF;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
     color: white;
-    border: none; 
-    cursor: pointer;  
+    cursor: pointer;
+
 }
+
 .outline-btn{
-    background-color:white;
-    padding: 10px 20px;
-    border-radius: 12px;
+     margin-top: 15px;
+    background: none;
+    border: solid 2px #fd6e0aFF;
+    border-radius: 5px;
+    padding: 6px 12px;
     font-weight: bold;
-    font-size: 20px;
-    color: orange;
-    border: 1px solid orange;  
-    cursor: pointer; 
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    color: #fd6e0aFF;
+    cursor: pointer;
+}
+.common-btn:hover{
+    background-color: white;
+    color: #FD6E0A;
+    border: 2px solid #FD6E0A;
+}
+
+.outline-btn:hover{
+    background-color: #FD6E0A;
+    color: white;
+    border: 2px solid #FD6E0A;
 }
 .container{
     max-width: 1200px;
@@ -46,11 +62,19 @@ header{
 }
 
 nav{
-    
+     max-width:1140px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+nav ul{
     display: flex;
-    justify-content: space-between;
-   
-    padding: 12px 0px;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
 }
 .logo{
     font-weight: bold;
@@ -59,13 +83,7 @@ nav{
 .logo-m{
     color:#fd6e0a;
 }
-ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 10px;
-    align-items: center;
-}
+
 ul li a{
     text-decoration: none;
 }
@@ -132,9 +150,11 @@ ul li a{
 
 .what-i-do-parent{
 
-    margin: 60px auto;
+    margin: 100px auto;
     text-align: center;
+    border-radius: 10px;
 }
+
 .what-i-do-card-container{
     display: flex;
     gap: 24px;
@@ -154,6 +174,7 @@ ul li a{
     height: 45px;
     margin-bottom: 20px;
 }
+
 .what-i-do-card h2{
     font-size: 22px;
     margin-bottom: 15px;
@@ -187,14 +208,14 @@ ul li a{
     justify-content: space-between;
     text-align: left;
     gap: 50px;
-    background-color: snow;
+    background-color: #FFFAFA;
     padding: 40px;
-    border: 1px dotted #fd6e0aFF;
+    border: 2px dotted #fd6e0aFF;
     border-radius: 10px;
 }.resume-head{
     text-align: center;
     margin-bottom: 10px;
-    background-color: whitesmoke;
+    background-color: #F5F5F5;
     border: 1px dotted #fd6e0aFF;
     padding-bottom: 5px;
     border-radius: 10px;
@@ -334,8 +355,11 @@ footer{
     gap: 15px;
     background-color: #fff8f3;
     padding: 20px;
-    border-radius: 10;
-   
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 footer form {
     padding: 20px;
