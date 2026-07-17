@@ -6,11 +6,15 @@
    margin: 0;
      font-family: "Open Sans", sans-serif;
 }
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
 img{
     max-width: 100%;
 }
 header{
-    background-color: #fff8f3FF;
+    background-color: white;
     
 
 }
@@ -20,7 +24,7 @@ header{
     padding: 10px 20px;
     border-radius: 12px;
     font-weight: bold;
-    font-size: 20 px;
+    font-size: 20px;
     color: white;
     border: none; 
     cursor: pointer;  
@@ -30,7 +34,7 @@ header{
     padding: 10px 20px;
     border-radius: 12px;
     font-weight: bold;
-    font-size: 20 px;
+    font-size: 20px;
     color: orange;
     border: 1px solid orange;  
     cursor: pointer; 
@@ -38,6 +42,7 @@ header{
 .container{
     max-width: 1200px;
     margin: auto;
+    
 }
 
 nav{
@@ -70,11 +75,17 @@ ul li a{
      background-color: #fff8f3;
 }
 .hero-parent{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+     padding:60px 0;
+
    
+}
+.hero-right img{
+    width:420px;
 }
 .hero-left-p1{
     font-size: 38px;
@@ -121,7 +132,7 @@ ul li a{
 
 .what-i-do-parent{
 
-    margin: 60px,auto;
+    margin: 60px auto;
     text-align: center;
 }
 .what-i-do-card-container{
@@ -167,4 +178,193 @@ ul li a{
     color: #757575;
     font-size: 15px;
 }
+
+/* Resume Section */
+
+.resume-container{
+     font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 50px;
+    background-color: snow;
+    padding: 40px;
+    border: 1px dotted #fd6e0aFF;
+    border-radius: 10px;
+}.resume-head{
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    border: 1px dotted #fd6e0aFF;
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+.resume{
+    max-width: 1140px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.resume-item p{
+    margin-left: 0;
+    padding-left: 0;
+    text-indent: 0;
+    font-size: 16px;
+    color: #757575;
+    font-weight: 400;
+    line-height: 28px;
     
+    color: #757575;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+.resume-column{
+    flex: 1;
+}
+
+.section-title{
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.resume-item{
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.resume-item h4{
+    font-size: 25px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+
+
+
+.download-btn{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.download-btn a{
+    display: inline-block;
+    text-decoration: none;
+    background: #FD6E0A;
+    color: #fff;
+    padding: 18px 35px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.download-btn a:hover{
+    background: #e55d00;
+}
+/* My amazing work section style */
+
+
+.my-amazing-work-parent{
+    text-align: center;
+      margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+
+
+}
+.gallery{
+    margin-top: 25px;
+       width: 90%;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    grid-auto-rows: 150px;
+    gap: 12px;
+    grid-template-areas: 
+    "one two three"
+    "four two six"
+    "four five six";
+              
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-1{
+    grid-area: one;
+    
+}
+.box-2{
+    grid-area: two;
+
+}
+.box-3{
+    grid-area: three;
+
+}
+.box-4{
+    grid-area: four;
+
+}
+.box-5{
+    grid-area: five;
+
+}
+.box-6{
+    grid-area: six;
+
+}
+/* My footer style start */
+
+footer{
+    text-align: center;
+    margin-top: 70px !important;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: #fff8f3;
+    padding: 20px;
+    border-radius: 10;
+   
+}
+footer form {
+    padding: 20px;
+}
+.footer-left{
+    text-align: left;
+}
+.footer-left p{
+
+    margin: 10px 0;
+    text-align: left !important;
+
+}
+.social-icon{
+    text-align: center;
+}
+
+
+footer form input ,footer form textarea{
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 8px 15px;
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    margin-bottom:8px;
+} 
+.message-bar{
+    text-align: left;
+}
+/* Footer end */
